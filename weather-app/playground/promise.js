@@ -18,13 +18,6 @@ var asyncAcc = (a,b) => {
 asyncAcc(1 , 1).then((res)=> { console.log(res); return asyncAcc(res,1).then((res)=>{console.log(res)}, (err)=> { console.log( err, ' error2')});  }, (err)=>{console.log(err)} )
 
 
-
-
-
-
-
-
-
 // var somePromice = new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //         reject('rejected');
